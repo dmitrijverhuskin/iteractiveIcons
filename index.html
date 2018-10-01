@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>interactiveIcons</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Call To action</h1>
+    <div id="ss_menu">
+
+        <div>
+            <a target="_blank" href="#"><i class="fa fa-envelope"></i>
+            <img src ="images/contact.png" width="" class="img-responsive" alt="Contact us"/></a>
+            <span>Contact<br> Us</span>
+        </div>
+
+        <div>
+            <a href="#"><i class="fa fa-phone"></i>
+            <img src ="images/call.png" width="" class="img-responsive" alt="Call us"/></a>
+            <span>Call<br>Us</span>
+        </div>
+
+        <div>
+            <a href="#"><i class=" fa fa-download"></i><img src ="images/download.png" width="" class="img-responsive" alt="Download docs"/></a>
+            <span>Download<br>Docs</span>
+        </div>
+
+        <div>
+            <a href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                <img src ="images/pdf.png" width="" class="img-responsive" alt="Pdf book"/></a>
+            <span>Pdf<br>Book</span>
+        </div>
+
+        <div>
+            <a target="_blank" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i>
+            <img src ="images/request.png" width="" class="img-responsive" alt="Quote request"/></a>
+            <span>Quote<br>request</span>
+        </div>
+
+        <div class="menu_check">
+            <div class="share" id="ss_toggle" data-rot="180">
+                <img src="images/air-tog.jpg" width="" class="img-responsive" alt="" />
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script>
+        $('#ss_toggle').on('click', function(ev) {
+            $('body').toggleClass('shadow_bg');
+            $(this).parents('#ss_menu').toggleClass('activated');
+        });
+    </script>
+
+</body>
+</html>
